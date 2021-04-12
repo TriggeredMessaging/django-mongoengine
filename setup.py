@@ -39,14 +39,12 @@ setup(
     author_email=__email__,
     description=__description__,
     long_description=__doc__,
-    test_suite='nose.collector',
     zip_safe=False,
     platforms='any',
     install_requires=["django>1.11", "mongoengine>=0.14"],
     packages=find_packages(exclude=('doc', 'docs',)),
     include_package_data=True,
     # use python setup.py nosetests to test
-    setup_requires=['nose', 'coverage'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
